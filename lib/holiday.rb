@@ -98,7 +98,7 @@ def all_holidays_with_bbq(holiday_hash)
       value.each do |supply|
         formatted_supply = supply.split
         formatted_supply.each do |word|
-          word != "BBQ" ? word.capitalize!
+          word.capitalize! unless word == "BBQ"
         end
         supply = formatted_supply.join(" ")
         supplies.push(supply)
