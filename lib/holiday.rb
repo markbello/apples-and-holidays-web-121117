@@ -73,7 +73,7 @@ def all_supplies_in_holidays(holiday_hash)
       value.each do |supply|
         formatted_supply = supply.split
         formatted_supply.each do |word|
-          word.capitalize!
+          word.capitalize! unless word == "BBQ"
         end
         supply = formatted_supply.join(" ")
         supplies.push(supply)
