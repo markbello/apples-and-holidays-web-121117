@@ -94,5 +94,5 @@ def all_holidays_with_bbq(holiday_hash)
       end
     end
   end
-  puts holidays_with_bbqs
+  holidays_with_bbqs
 end
