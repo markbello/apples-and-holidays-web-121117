@@ -94,6 +94,6 @@ def all_holidays_with_bbq(holiday_hash)
         keys.push(key)
       end
     end
+    puts holidays_with_bbqs
   end
-  puts holidays_with_bbqs
 end
